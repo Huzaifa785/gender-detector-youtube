@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #161623;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background: whitesmoke;
+    width: 370px;
+    border-radius: 20px;
+    padding-top: 50px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(58, 55, 57, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    /* transition: 0.9s; */
+}
+
+.heading{
+    font-size: 40px;
+}
+
+.blue{
+    color: rgb(3, 55, 167);
+}
+
+.pink{
+    color: crimson;
+}
+
+
+input{
+    margin: 20px 20px;
+    border-style: none;
+    outline: none;
+    border: 3px solid crimson;
+    border-radius: 20px;
+    width: 280px;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: crimson;
+    font-family: inherit;
+}
+
+input::placeholder{
+    color: crimson;
+    font-family: inherit;
+}
+
+button{
+    font-size: 20px;
+    padding: 15px;
+    border: 3px solid rgb(3, 55, 167);
+    background: rgba(220, 20, 60, 0);
+    color: rgb(3, 55, 167);
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover{
+    background: rgb(3, 55, 167);
+    color: whitesmoke;
+    transition: 0.2s;
+}
+
+.result{
+    font-size: 30px;
+    line-height: 18px;
+    color: grey;
+}
+
+@media (max-width: 460px) {
+    .card{
+        width: 320px;
+    }
+    input{
+        width: 220px;
+    }
+}
